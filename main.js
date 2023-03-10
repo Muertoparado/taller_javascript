@@ -1,12 +1,9 @@
-/* 2. Dado un número indicar si es par o impar y si es mayor de 10. */
+/* 3. Construir el algoritmo para determinar el voltaje de un
+circuito a partir de la resistencia y la intensidad de corriente. */
 
-let num1=Number(prompt("digite el numero"));
-if(num1%2==0){
-    console.log(`${num1} es par `)
-}
-else{
-    console.log(`${num1} es impar `)
-}
-if(num1>10){
-    console.log(`el numero ${num1} es mayor a 10 `)
-}
+let voltaje=0;
+
+let resistencia=Number(prompt("digite la resistencia total"));
+let corriente=Number(prompt("digite la corriente total"));
+
+console.log(`el voltaje total circuito serie es: ${resistencia*corriente}V`);
