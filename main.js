@@ -11,5 +11,12 @@ for (let index = 0; index < 3; index++) {
     notas[index]=nota;
     sum+=nota;
 }
-nfin=sum/3;
-console.log(nfin);
+let nfin=sum/3;
+/* console.log(`la nota final del promedio es ${nfin}`); */
+
+if(nfin >=3.9){
+    console.log(`becado ${nfin}`);
+}
+else{
+    console.log(`estudie ${nfin}`);
+}
