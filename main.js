@@ -1,26 +1,25 @@
-/* 10. Desarrolle un programa cíclico que capture un dato
-numérico cada vez, y los vaya acumulando. El programa se
-detiene cuando el usuario digita un cero. El programa debe
-mostrar: LA SUMATORIA DE LOS VALORES, EL VALOR DEL
-PROMEDIO, CUÁNTOS VALORES FUERON DIGITADOS, MAYOR
-VALOR Y MENOR VALOR */
-arr=[];
-do{
-   
-    op=Number(prompt("digite un nuero diferente de cero: "));
-    arr.unshift(op);
-    console.log(arr);
+/* 6. Construir el algoritmo en Javascript para un programa
+para cualquier cantidad de estudiantes que lea el nombre,
+el sexo y la nota definitiva y halle al estudiante con la mayor
+nota y al estudiante con la menor nota y cuantos eran
+hombres y cuantos mujeres. */
 
-}while(op!=0);
-let sum=0;
-let cont=0;
-for(const num of arr){
-    sum +=num;
-    cont+=1;
+let estudiantes=[];
+
+function estudiantes(nombre,sexo,nota){
+    this.nombre=nombre;
+    this.sexo=sexo;
+    this.nota=nota;
 }
+ do{
+    let nombre=prompt("digite el nombre: ");
+    let sexo=prompt("digite el sexo (F o M): ");
+    let nota=parseFloat("digite la nota definitiva: ");
 
-console.log(`sumatoria total ${sum}`);
-console.log(`numeros ingresados ${cont}`);
-console.log(`valor promedio ${sum/cont}`);
-console.log(`numero maximo `,Math.max(...arr));
-console.log(`numero minimo `,Math.min(...arr));
+ }while(prompt("desea continuar"));
+m=[];
+f=[];
+
+ if(estudiantes.sexo=='f'){
+    m.unshift()
+ }
