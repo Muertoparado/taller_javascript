@@ -1,13 +1,19 @@
-/* 7. Programa que pida el ingreso del nombre y precio de un artículo y la
-cantidad que lleva el cliente. Mostrar lo que debe pagar el comprador
-en su factura. */
+/* 8. Programa que Ingrese por teclado:
+a. el valor del lado de un cuadrado para mostrar por pantalla el
+perímetro del mismo
+b. la base y la altura de un rectángulo para mostrar el área del
+mismo */
 
 
-let a=(prompt("digite el nombre del articulo: "));
-let b=Number(prompt("Digite el precio del articulo: "));
-let c=Number(prompt("Digite la cantidad de articulos: "))
+let op=Number(prompt('1. para cuadrado \n 2.para triangulo '));
 
-
-let precio=c*b;
-
-console.log(`------factura------\n nombre ${a} \n precio a pagar ${precio}`)
+switch (op){
+    case 1:
+        l=Number(prompt(`digite el lado del cuadrado`));
+        console.log(`perimetro ${l*4}`);
+        break;
+    case 2:
+        a=Number(prompt(`digite base del triangulo`));
+        b=Number(prompt(`altura triangulo`));
+        console.log(`area total triangulo ${a*b}`);
+}
